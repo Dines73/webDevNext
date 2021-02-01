@@ -12,7 +12,10 @@ const article = ({ article }) => {
     <>
       <Meta title={article.title} description={article.excerpt} />
       <h1>{article.title}</h1>
-      <div className={cardLayout.card}>{article.body}</div>
+      <div className={cardLayout.card}>
+        {article.body}
+        <img style={{ marginTop: "2.5rem" }} src={article.img} alt="Foto" />
+      </div>
       <br />
       <Link href="/">Go Back</Link>
     </>
