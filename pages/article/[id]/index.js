@@ -12,7 +12,7 @@ const article = ({ article }) => {
     <>
       <Meta title={article.title} description={article.excerpt} />
       <h1>{article.title}</h1>
-      <p className={cardLayout.card}>{article.body}</p>
+      <div className={cardLayout.card}>{article.body}</div>
       <br />
       <Link href="/">Go Back</Link>
     </>
