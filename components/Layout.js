@@ -1,7 +1,7 @@
-import Nav from './Nav'
-import Meta from './Meta'
-import Header from './Header'
-import styles from '../styles/Layout.module.css'
+import Nav from "./Nav"
+import Meta from "./Meta"
+import Header2 from "./Header2"
+import styles from "../styles/Layout.module.css"
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <Nav />
       <div className={styles.container}>
         <main className={styles.main}>
-          <Header />
+          <Header2 />
           {children}
         </main>
       </div>
